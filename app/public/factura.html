@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Bebidas Nativas | Factura</title>
+
+  </head>
+  <body>
+    <div class="wrapper">
+    <link rel="stylesheet" href="factura.css">
+		      <div id="header">
+		        <table>
+		            <tr>
+		          	    <th id="info-factura-1">
+		          	    	<img src="https://cdn.glitch.global/717622bd-ed28-44da-a5ce-882505cb315f/logo.jpeg?v=1689846891112" style="margin-top:1%; margin-bottom:1%; margin-left:0;text-align:left;"/>
+		                   <h3>Bebidas Nativas Del Paraguay S.A.</h3>
+                      <h4>Captacion, tratamiento y suministro de agua</h4>
+		                    <h5>Ykuá Roly c/ Cañada del Carmen - Luque - Paraguay</h5>
+		                    <h5>Tél.: +595981854100</h5>
+		                    <h4>E-mail:ventas1@aguagondwana.com</h4>
+		                    <h4>www.aguagondwana.com</h4>
+		                </th>
+		                <th id="info-factura-2">
+		                    <h4>Timbrado N°: 16117282</h4>
+		                    <h5>Fecha Inicio de Vigencia 01-01-2023</h5>
+		                    <h5>Fecha Fin de Vigencia 31-01-2024</h5>
+		                    <h5>RUC: 80085098-0</h5>
+		                    <h4 style="margin-top:-0.5%;">FACTURA N°: <br>{{number}}</h4>
+		                </th>
+		            </tr>
+		        </table>
+		    </div>
+		    <div id="info-cliente">
+		        <table>
+		            <tr>
+		                <th id="data-fiscal">
+		                    <p><b>Fecha de Emisión: {{date}}</b></p>
+		                    <p><b>Nombre o Razón Social: {{name}}</b></p>
+		                    <p><b>RUC/CI: </b>{{ruc}}</p>
+		                    <p><b>Teléfono: {{phone}}</b></p>
+		                </th>
+		                <th id="cond-venta">
+		                    <p><b>Condición de Venta: {{condicion}} </b></p>		                     
+		                    <p><b>Dirección: {{address}}</b></p>
+		                </th>
+		            </tr>
+		        </table>
+		    </div>
+		    <div id="items">
+		        <table>
+		            <tr colspan="6">
+		                <th class="items-cabecera" id="items-cant">CANTIDAD</th>
+		                <th class="items-cabecera" id="items-desc">DESCRIPCIÓN</th>
+		                <th class="items-cabecera">PRECIO UNITARIO</th>
+		                <th class="items-cabecera" id="items-exenta">EXENTA</th>
+		                <th class="items-cabecera" id="items-5">5%</th>
+		                <th class="items-cabecera" id="items-10" colspan="2">10%</th>
+		            </tr>
+		{{items}}
+		            <tr>
+		                <td id="items-subtotal-texto-1" style="margin-left:0;padding-left:0;" colspan="3">SUB-TOTAL:</td>
+		                <td id="items-subtotal-numero-1" style="margin-left:0;padding-left:0;"  colspan="3">Gs {{subtotal}}</td>
+		            </tr>
+                <!--<tr>
+                    <td style="margin-left:0 padding-left:0" colspan="3">
+                      SON GUARANÍES {{subtotal_letras}}
+                    </td>
+                </tr>-->
+		            <tr>
+		                <td id="items-subtotal-texto-3" style="margin-left:0;padding-left:0;"  colspan="3">LIQUIDACIÓN DEL IVA 10%:</td>
+		                <td id="items-subtotal-numero-3" style="margin-left:0;padding-left:0;"  colspan="3">Gs {{iva10}}</td>
+		            </tr>
+		            <!--<tr>
+                    <td style="margin-left:0; padding-left:0" colspan="3">
+                      SON GUARANÍES {{iva10_letras}}
+                    </td>
+                </tr>-->
+                <tr>
+		                <td style="margin-left:0;padding-left:0;"  colspan="3">DESCUENTO:</td>
+		                <td style="margin-left:0;padding-left:0;"  colspan="3">{{discount}}</td>
+		            </tr>
+		            <tr>
+		                <td id="items-subtotal-texto-2" style="margin-left:0;padding-left:0;"  colspan="3">TOTAL A PAGAR:</td>
+		                <td id="items-subtotal-numero-2" style="margin-left:0;padding-left:0;"  colspan="3">Gs {{total}}</td>
+		            </tr>
+                <tr>
+                    <td style="margin-left:0; padding-left:0" colspan="3">
+                      SON GUARANÍES {{total_letras}}
+                    </td>
+                </tr>
+		        </table>
+		    </div>
+		    <div id="nota-cliente">
+		        <table class="tabla-nota">
+		            <tr class="tabla-nota"><td colspan="1" id="nota" class="tabla-nota"><p>
+		                <b>NOTA AL CLIENTE: </b>Solicitamos al cliente revisar su pedido antes de confirmar su factura. 
+		                No se admitirán reclamos por la falta de envio una vez confirmada la misma. 
+		                La falta de pago de esta factura a su vencimiento establecerá mora, en forma automática y sin la necesidad judicial ni extra judicial devengando un interés del 3%  mensual autorizando la inclusión a la base de datos del informoonf SA. 
+		                Conforme a los establecido en la ley 1682, como también para que se pueda proveer información a terceros interesados. 
+		                Todas las partes intervinientes en este documento se someten a la jurisdicción y competencia de los jueces y tribunales de la ciudad de Asunción y declaran prorrogada cualquier otro que pudiere corresponder.
+		            </p></td></tr>
+		            <tr class="tabla-nota"><td colspan="1" id="recibi-conforme" class="tabla-nota"><p class="tabla-nota">
+		                <b>RECIBÍ CONFORME: </b>
+		            </p></td></tr>
+		        </table>
+		    </div>
+		    <div id="firma-cliente">
+		        <table class="tabla-nota">
+		            <tr class="tabla-nota">
+		                <td colspan="3" id="firma" class="tabla-nota"><p><b>FIRMA: </b></p></td>
+		                <td colspan="3" id="aclaracion" class="tabla-nota"><p class="tabla-nota"><b>ACLARACIÓN: </b></p></td>
+		                <td colspan="3" id="cin" class="tabla-nota"><p class="tabla-nota"><b>C.I. N°: </b></p></td>
+		            </tr>
+		        </table>
+		    </div>
+		    <div id="footer">
+		        <p id="footer-texto">
+		          Sitio Web: www.tdigital.com.ar		         
+		        </p>
+		        <p id="footer-nombre">
+		          Transformaciones Digitales S.R.L.
+		        </p>
+		    </div>
+    </div>
+  </body>
+</html>

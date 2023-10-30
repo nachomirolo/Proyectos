@@ -1,0 +1,143 @@
+	body{
+	    font-size: 10px;
+	}
+	table, th, td{
+	    font-size: 12px;
+	    border: 1px solid black;
+	    border-collapse: collapse;
+	    width: 90%;
+	    margin-left: 5%;
+      margin-right: -20%;
+	    text-align: left;
+	    padding-left: 10%;
+	}
+	#info-empresa-container{
+	    display: inline;
+	}
+	#logo-empresa{
+	    width: 25%;
+	    height: 120%;
+	    float: left;
+      margin-top: 10%;
+      margin-left: -10%;
+	    margin-right: 0%;
+      /*display: fixed;*/
+	}
+	.info-empresa-desc{
+	    margin-left: 10%;
+	    font-size: 8px;
+	    float: center;
+	}
+	.info-empresa-desc-2{
+      width: 20%;
+	    margin-left: 10%;
+	    font-size: 6px;
+	    font-weight: 500;
+	    float: center;
+	}
+	#info-factura-1{
+      width: 65%;
+	    line-height: 0.2;
+	    padding-left: 0;
+	    padding-top: 1%;
+	    margin-left: 0;
+	    margin-right: -30%;
+	    margin-top: 2%;
+	    text-align: center;
+	}
+
+	#info-factura-2{
+	    line-height: 0.8;
+	    padding-left: 0;
+	    padding-top: 1%;
+	    margin-left: -30%;
+	    margin-top: 1%;
+	    text-align: center;
+	}
+	#info-cliente{
+	    margin-top:1%;
+      font-size: 10px;
+	}
+	#data-fiscal{
+      width: 60%;
+	    font-size:10px;
+	    line-height: 0.74;
+	    padding-top:1%;
+	    padding-bottom:1%;
+	}
+	#items{
+	    font-size: 6px;
+	    margin-left: 0;
+	    padding-left: 0;
+	    display: block;
+	    text-align: center;
+	}
+	.items-cabecera{
+	    font-size: 10px;
+	    margin-left: 0;
+	    padding-left: 0;
+	    padding-top: 1%;
+	    padding-bottom: 1%;
+	    width: 15%;
+	    text-align: center;
+	    background-color: rgb(221, 221, 221)
+	}
+	#items-cant{
+	    width: 7%;
+	}
+	#items-desc{
+	    width: 40%;
+	}
+  #items-exenta{
+      margin-right: -10%;
+  }
+  #items-5{
+      margin-right: -10%;
+      width: 3%
+  }
+  #items-10{
+      margin-left: -20%;
+      padding-left: -20%;
+  }
+	.item-linea{
+	    font-size: 9px;
+	    padding-left: 1px;
+	    width: 15%;
+	    text-align: center;
+	}
+	#cond-venta{
+	    font-size: 12px;
+	    padding-left:2px;
+	    line-height: 0.8;
+      margin-left: -20%;
+      text-align: center;
+	}
+	#items-subtotal-numero{
+	    text-align: left;
+	    padding-left: 0;
+	    margin-left: 0;
+	}
+	.tabla-nota{
+	    border: 0px solid black;
+	    padding-left: 0;
+	    text-align: justify;
+	    margin-top: 15px;
+	    font-size: 7px;
+	}
+	#firma{
+	    width: 40%;
+	}
+	#aclaracion{
+	    width: 30%
+	}
+	#cin{
+	    margin-left: -20%;
+	    padding-left: 0;
+	}
+  #nota{
+    font-size:10px;
+  }
+	#footer{
+	    text-align: center;
+	    padding-left: 70%;
+	}
