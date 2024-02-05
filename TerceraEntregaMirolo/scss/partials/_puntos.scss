@@ -1,0 +1,38 @@
+/*puntos*/
+.fondo {
+    background-color: #2471A3;
+}
+
+.letra {
+    color: aliceblue;
+}
+
+@media (min-width: 365px) and (max-width: 1200px) {
+
+    header img {
+        width: 80px;
+    }
+
+    main h2.ajustar {
+        font-size: 1.5em;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .image-container img,
+    .image-container zoom img {
+        width: 100%;
+    }
+
+    .text-container {
+        max-width: 100%;
+
+    }
+
+    .iframe {
+        max-width: 100%;
+    }
+
+}

@@ -1,0 +1,31 @@
+
+
+
+/*puntos*/
+.fondo {
+    background-color: #2471A3;
+}
+
+.fondo2 {
+    background-color: #3f3f3f;
+}
+
+.letra {
+    color: aliceblue;
+}
+
+.zoom {
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+        transform: scale(1.1);
+    }
+    
+}
+
+@media only screen and (min-width: 365px) and (max-width: 1200px) {
+    .content-container {
+        flex: 0 0 49%;
+    }
+}
+
+

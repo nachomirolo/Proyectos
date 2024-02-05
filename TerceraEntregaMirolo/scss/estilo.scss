@@ -1,0 +1,185 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import "partials/formulario";
+@import "partials/nosotros";
+@import "partials/servicios";
+@import "partials/puntos";
+
+$color : #2471A3;
+a {
+    text-decoration: none;
+    color: rgb(244, 244, 244);
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*navegador---- header*/
+
+header {
+    background-color: $color;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        color: aliceblue;
+
+    }
+
+    nav ul {
+        display: flex;
+        gap: 16px;
+        font-size: medium;
+
+    }
+
+}
+
+
+
+
+/* SECCIONES */
+
+.ajustar {
+    padding: 16px;
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container {
+    flex: 0 0 45%;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        box-shadow: 1rem 1rem 40px rgba(0, 0, 0, 0.7);
+    }
+}
+
+
+
+.text-container {
+    flex: 0 0 45%;
+    text-align: justify;
+    box-shadow: 1rem 1rem 40px rgba(0, 0, 0, 0.7);
+    padding: 16px;
+
+}
+
+.text-container2 {
+    flex: 0 0 45%;
+    text-align: center;
+    box-shadow: 1rem 1rem 40px rgba(0, 0, 0, 0.7);
+    padding: 16px;
+
+}
+
+
+/*puntos*/
+
+.fondo {
+    background-color: #2471A3;
+}
+
+.letra {
+    color: aliceblue;
+}
+
+/*promos*/
+
+.imagenes {
+    width: 100%;
+    height: 600px;
+}
+
+/* carrusel*/
+
+.centrar {
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+}
+@media (min-width: 365px) and (max-width: 1200px) {
+
+   
+
+    header img {
+        width: 80px; 
+    }
+
+    main h2.ajustar {
+        font-size: 1.5em; 
+    }
+
+    .flex-container {
+        flex-direction: column; 
+    }
+
+    .image-container img,
+    .image-container zoom img {
+        width: 100%; 
+    }
+
+    .text-container {
+        max-width: 100%; 
+    }
+
+    .text-container2 {
+        text-align: center; 
+    }
+
+    .carousel-inner {
+        max-width: 80%; 
+        margin: auto; 
+    }
+
+    .imagenes {
+        height: 200px; 
+    }
+}
+
+/* footer */
+
+footer {
+
+    background-color: #2471A3;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    p {
+    text-align: center;
+    flex: 100% 0 150%;
+    color: aliceblue;
+}
+
+}
+
+
+
+
+

@@ -1,0 +1,288 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120vh;
+  background-color: #1861af;
+  color: #000000;
+}
+
+.container {
+  text-align: center;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.h1 {
+  color: #007BFF;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  box-sizing: border-box;
+}
+
+.button {
+  background-color: #007BFF;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #0056b3;
+}
+
+/*puntos*/
+.fondo {
+  background-color: #2471A3;
+}
+
+.fondo2 {
+  background-color: #3f3f3f;
+}
+
+.letra {
+  color: aliceblue;
+}
+
+.zoom {
+  transition: transform 0.3s ease-in-out;
+}
+.zoom:hover {
+  transform: scale(1.1);
+}
+
+@media only screen and (min-width: 365px) and (max-width: 1200px) {
+  .content-container {
+    flex: 0 0 49%;
+  }
+}
+.simg {
+  width: 100%;
+  height: 450px;
+}
+
+.title {
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.paragraph {
+  padding: 36px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.titulo {
+  text-align: center;
+  padding: 16px;
+}
+
+.contenido {
+  text-align: center;
+}
+
+/* Reglas de medios para pantallas entre 365px y 1200px */
+@media only screen and (min-width: 365px) and (max-width: 1200px) {
+  .content-container {
+    flex: 0 0 49%;
+  }
+}
+/*puntos*/
+.fondo {
+  background-color: #2471A3;
+}
+
+.letra {
+  color: aliceblue;
+}
+
+@media (min-width: 365px) and (max-width: 1200px) {
+  /* Ajustes específicos para tamaños de pantalla entre 365px y 1200px */
+  header img {
+    width: 80px;
+    /* Ejemplo: Reducir el tamaño del logo en la barra de navegación */
+  }
+  main h2.ajustar {
+    font-size: 1.5em;
+    /* Ejemplo: Ajustar el tamaño de los encabezados en la sección principal */
+  }
+  .flex-container {
+    flex-direction: column;
+    /* Ejemplo: Cambiar la dirección del flex container en dispositivos móviles */
+  }
+  .image-container img,
+  .image-container zoom img {
+    width: 100%;
+    /* Ejemplo: Ajustar el tamaño de las imágenes al ancho del contenedor */
+  }
+  .text-container {
+    max-width: 100%;
+    /* Ejemplo: Ajustar el ancho máximo del contenedor de texto */
+  }
+  .iframe {
+    max-width: 100%;
+  }
+}
+a {
+  text-decoration: none;
+  color: rgb(244, 244, 244);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*navegador---- header*/
+header {
+  background-color: #2471A3;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header a {
+  color: aliceblue;
+}
+header nav ul {
+  display: flex;
+  gap: 16px;
+  font-size: medium;
+}
+
+/* SECCIONES */
+.ajustar {
+  padding: 16px;
+  text-align: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.image-container {
+  flex: 0 0 45%;
+}
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 1rem 1rem 40px rgba(0, 0, 0, 0.7);
+}
+
+.text-container {
+  flex: 0 0 45%;
+  text-align: justify;
+  box-shadow: 1rem 1rem 40px rgba(0, 0, 0, 0.7);
+  padding: 16px;
+}
+
+.text-container2 {
+  flex: 0 0 45%;
+  text-align: center;
+  box-shadow: 1rem 1rem 40px rgba(0, 0, 0, 0.7);
+  padding: 16px;
+}
+
+/*puntos*/
+.fondo {
+  background-color: #2471A3;
+}
+
+.letra {
+  color: aliceblue;
+}
+
+/*promos*/
+.imagenes {
+  width: 100%;
+  height: 600px;
+}
+
+/* carrusel*/
+.centrar {
+  text-align: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+@media (min-width: 365px) and (max-width: 1200px) {
+  /* Ajustes específicos para tamaños de pantalla entre 365px y 1200px */
+  header img {
+    width: 80px; /* Ejemplo: Reducir el tamaño del logo en la barra de navegación */
+  }
+  main h2.ajustar {
+    font-size: 1.5em; /* Ejemplo: Ajustar el tamaño de los encabezados en la sección principal */
+  }
+  .flex-container {
+    flex-direction: column; /* Ejemplo: Cambiar la dirección del flex container en dispositivos móviles */
+  }
+  .image-container img,
+  .image-container zoom img {
+    width: 100%; /* Ejemplo: Ajustar el tamaño de las imágenes al ancho del contenedor */
+  }
+  .text-container {
+    max-width: 100%; /* Ejemplo: Ajustar el ancho máximo del contenedor de texto */
+  }
+  .text-container2 {
+    text-align: center; /* Ejemplo: Centrar el texto en dispositivos entre 365px y 1200px */
+  }
+  .carousel-inner {
+    max-width: 80%; /* Ejemplo: Reducir el ancho del carrusel en pantallas medianas */
+    margin: auto; /* Centrar el carrusel */
+  }
+  .imagenes {
+    height: 200px; /* Ejemplo: Fijar la altura de las imágenes del carrusel */
+  }
+}
+/* footer */
+footer {
+  background-color: #2471A3;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+footer p {
+  text-align: center;
+  flex: 100% 0 150%;
+  color: aliceblue;
+}
+
+/*# sourceMappingURL=estilo.css.map */
